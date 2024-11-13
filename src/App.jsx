@@ -8,6 +8,7 @@ import Login from './pages/auth/Login';
 import Register from './pages/auth/Register';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Dashboard from './pages/main/Dashboard';
 
 function App() {
  const {state:{user}} = useContext(AppContext)
@@ -30,7 +31,7 @@ function App() {
      <ToastContainer theme='colored' position='top-center'/>
      <Routes>
       <Route path='/' element={<RootLayout/>}>
-
+          <Route index element={<Dashboard/>}/>
       </Route>
      </Routes>
     </>
