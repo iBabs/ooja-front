@@ -14,3 +14,6 @@ body{
 .oj{
     @apply text-primary
 }
+.active{
+    @apply font-bold text-primary
+}

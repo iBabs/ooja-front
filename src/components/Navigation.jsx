@@ -38,37 +38,34 @@ function Navigation() {
                 <li>
                   <NavLink
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    to="#"
+                    to="/"
                   >
-                    {" "}
-                    About{" "}
+                    Home
                   </NavLink>
                 </li>
 
                 <li>
                   <NavLink
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    to="#"
+                    to="/careers"
                   >
-                    {" "}
-                    Careers{" "}
+                    Careers
                   </NavLink>
                 </li>
 
                 <li>
                   <NavLink
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    to="#"
+                    to="/market"
                   >
-                    {" "}
-                    History{" "}
+                    My Market
                   </NavLink>
                 </li>
 
                 <li>
                   <NavLink
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    to="#"
+                    to="/service"
                   >
                     {" "}
                     Services{" "}
@@ -78,17 +75,16 @@ function Navigation() {
                 <li>
                   <NavLink
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    to="#"
+                    to="/profile"
                   >
-                    {" "}
-                    Projects{" "}
+                    Profile
                   </NavLink>
                 </li>
 
                 <li>
                   <NavLink
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    to="#"
+                    to="/blog"
                   >
                     {" "}
                     Blog{" "}
@@ -112,60 +108,56 @@ function Navigation() {
                 <li>
                   <NavLink
                     className="text-black transition "
-                    to="#"
+                    to="/"
                   >
-                    {" "}
-                    About{" "}
+                    Home
                   </NavLink>
                 </li>
 
                 <li>
                   <NavLink
                     className="text-black transition "
-                    to="#"
+                    to="/careers"
                   >
-                    {" "}
-                    Careers{" "}
+                    
+                    Careers
                   </NavLink>
                 </li>
 
                 <li>
                   <NavLink
                     className="text-black transition "
-                    to="#"
+                    to="/market"
                   >
-                    {" "}
-                    History{" "}
+                    My Market
                   </NavLink>
                 </li>
 
                 <li>
                   <NavLink
                     className="text-black transition "
-                    to="#"
+                    to="/service"
                   >
-                    {" "}
-                    Services{" "}
+                 
+                    Services
                   </NavLink>
                 </li>
 
                 <li>
                   <NavLink
                     className="text-black transition "
-                    to="#"
+                    to="/profile"
                   >
-                    {" "}
-                    Projects{" "}
+                    Profile
                   </NavLink>
                 </li>
 
                 <li>
                   <NavLink
                     className="text-black transition "
-                    to="#"
+                    to="/blog"
                   >
-                    {" "}
-                    Blog{" "}
+                    Blog
                   </NavLink>
                 </li>
                 <li>

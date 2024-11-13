@@ -2,7 +2,7 @@ import { Link,useNavigate } from "react-router-dom";
 import { useContext, useState } from "react";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import axios from "axios";
-import { AppContext } from "../contexts/AppContext";
+import { AppContext } from "../../contexts/AppContext";
 import { toast } from "react-toastify";
 
 const Login = () => {
