@@ -1,6 +1,7 @@
 import { useContext } from "react"
 import { AppContext } from "../../contexts/AppContext"
 import SectionOne from "./Dashboard/SectionOne"
+import MyProductSec from "./Dashboard/MyProductSec"
 
 
 function Dashboard() {
@@ -27,6 +28,7 @@ const {username} = user.user
             <img src="/images/pexels-olly-3762927-removebg-preview.png" alt="" />
         </div>
         <SectionOne/>
+        <MyProductSec/>
 
 
     </div>
