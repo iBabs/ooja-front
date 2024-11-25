@@ -29,7 +29,7 @@ function Hero() {
           We also offer delivery services,  so you can get your items as soon as possible. Ooja serves evryone around the country. We sell varieties of everything from house hold items to food and groceries and every other needs...
         </p>
 
-            <Link to="/register" className="bg-primary text-tertiary py-2 px-4 rounded-md font-bold">Get Started</Link>
+            <Link to="/signup" className="bg-primary text-tertiary py-2 px-4 rounded-md font-bold">Get Started</Link>
 
         <img src="/svgs/shopping-world-online-ecommerce-svgrepo-com.svg" alt="Ooja" width={100} className=" absolute bottom-0 -z-20 right-0 rotate-6" />
       </div>
