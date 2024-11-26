@@ -22,11 +22,12 @@ const Register = () => {
 const [formData, setFormData] = useState(inititalState)
 const history = useNavigate()
 const {dispatch} = useContext(AppContext)
+const [loading, setLoading] = useState(false)
 
-console.log(import.meta.env.VITE_API_URL)
 const handleSubmit =async(e)=>{
   e.preventDefault()
   try{
+    setLoading(true)  
     console.log(formData)
     const res = await axios.post(`${import.meta.env.VITE_API_URL}/api/v1/auth/signup`, formData)
     
@@ -39,8 +40,9 @@ const handleSubmit =async(e)=>{
   }catch(error){
     console.log(error)
     toast.error(error.response.data.message || error.response.data.error || "An error occured")
+  }finally{
+    setLoading(false)
   }
-  
   
 }
 
@@ -269,8 +271,11 @@ const handleChange=(e)=>{
                 </div>
 
                 <div className="col-span-6 sm:flex sm:items-center sm:gap-4">
-                  <button className="inline-block shrink-0 rounded-md border border-primary bg-primary px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-primary focus:outline-none focus:ring active:text-primary">
-                    Create an account
+                  <button className={`inline-block shrink-0 rounded-md border border-primary bg-primary px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-primary focus:outline-none focus:ring active:text-primary ${loading?"cursor-not-allowed opacity-50":""}`}
+                  disabled={loading}
+                  
+                  >
+                    {loading?"Loading...":"Create an account"}
                   </button>
 
                   <p className="mt-4 text-sm text-tertiary sm:mt-0">
