@@ -23,7 +23,7 @@ const [formData, setFormData] = useState(inititalState)
 const history = useNavigate()
 const {dispatch} = useContext(AppContext)
 
-
+console.log(import.meta.env.VITE_API_URL)
 const handleSubmit =async(e)=>{
   e.preventDefault()
   try{
