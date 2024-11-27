@@ -11,7 +11,7 @@ function MyProductSec() {
       try {
         const response = await axios.get("https://fakestoreapi.com/products");
         const data = response.data;
-        console.log(data, "mine");
+        // console.log(data, "mine");
         setMyProduct(data);
       } catch (error) {
         console.log(error);

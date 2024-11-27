@@ -9,7 +9,7 @@ const SectionOne = () => {
     const fetchProducts = async () => {
       const res = await axios.get("https://fakestoreapi.com/products");
       setProducts(res.data);
-      console.log(res.data)
+      // console.log(res.data)
     };
 
     fetchProducts()
