@@ -47,9 +47,9 @@ function Navigation() {
                 <li>
                   <NavLink
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    to="/careers"
+                    to="/upload"
                   >
-                    Careers
+                    Upload
                   </NavLink>
                 </li>
 
@@ -117,10 +117,10 @@ function Navigation() {
                 <li>
                   <NavLink
                     className="text-black transition "
-                    to="/careers"
+                    to="/upload"
                   >
                     
-                    Careers
+                    Upload
                   </NavLink>
                 </li>
 

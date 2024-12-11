@@ -9,6 +9,7 @@ import Register from './pages/auth/Register';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Dashboard from './pages/main/Dashboard';
+import AddProduct from './pages/main/AddProduct';
 
 function App() {
  const {state:{user}} = useContext(AppContext)
@@ -32,6 +33,7 @@ function App() {
      <Routes>
       <Route path='/' element={<RootLayout/>}>
           <Route index element={<Dashboard/>}/>
+          <Route path='/upload' element={<AddProduct/>}/>
       </Route>
      </Routes>
     </>
